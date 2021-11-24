@@ -1,0 +1,66 @@
+body {
+  display: block;
+  margin: 0px;
+}
+
+#mainPage {
+  height: 750px;
+  background-position: center;
+  background-size: 100% auto;
+  background-image: url("imges/mainScreenPicture.jpg");
+  background-repeat: no-repeat ;
+}
+
+#navigationPane {
+  position: absolute;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+#page1 {
+  height: 720px;
+  background-position: center;
+  background-size: 100% auto;
+  background-image: url("imges/cat1.jpg");
+  background-repeat: no-repeat ;
+}
+#page2 {
+  height: 720px;
+  background-position: center;
+  background-size: 100% auto;
+  background-image: url("imges/cat2.jpg");
+  background-repeat: no-repeat ;
+}
+#page3 {
+  height: 720px;
+  background-position: center;
+  background-size: 100% auto;
+  background-image: url("imges/cat3.jpg");
+  background-repeat: no-repeat ;
+}
+#page4 {
+  height: 720px;
+  background-position: center;
+  background-size: 100% auto;
+  background-image: url("imges/cat4.jpg");
+  background-repeat: no-repeat ;
+}
+#page5 {
+  height: 720px;
+  background-position: center;
+  background-size: 100% auto;
+  background-image: url("imges/cat5.jpg");
+  background-repeat: no-repeat ;
+}
+
+.hiddenNavigateValue {
+  visibility: hidden;
+}
