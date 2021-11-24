@@ -2,6 +2,22 @@ body {
   display: block;
   margin: 0px;
 }
+ul {
+  display: flex;
+  flex-direction: column;
+
+}
+
+li {
+  list-style-type: none;
+}
+
+.SwetchButton {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: snow;
+}
 
 #mainPage {
   height: 750px;
@@ -12,7 +28,7 @@ body {
 }
 
 #navigationPane {
-  position: absolute;
+  position: fixed;
 }
 
 ul {
