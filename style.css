@@ -9,6 +9,9 @@ ul {
 li {
   list-style-type: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .SwetchButton {
   margin: 50%;
