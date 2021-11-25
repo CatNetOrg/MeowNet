@@ -5,22 +5,28 @@ body {
 ul {
   display: flex;
   flex-direction: column;
-
 }
-
 li {
   list-style-type: none;
 }
 
 .SwetchButton {
-  width: 25px;
-  height: 25px;
+  margin: 50%;
+  width: 12px;
+  height: 12px;
   border-radius: 20px;
-  background-color: snow;
+  border: 5px solid #ece1e1;
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+}
+
+.SwetchButton:hover {
+  box-shadow: 0 0 40px 40px #ece1e1 inset;
 }
 
 #mainPage {
-  height: 750px;
+  height: 1200px;
   background-position: center;
   background-size: 100% auto;
   background-image: url("imges/mainScreenPicture.jpg");
@@ -29,6 +35,7 @@ li {
 
 #navigationPane {
   position: fixed;
+  margin: 20%;
 }
 
 ul {
@@ -42,14 +49,14 @@ ul {
 }
 
 #page1 {
-  height: 720px;
+  height: 1000px;
   background-position: center;
   background-size: 100% auto;
   background-image: url("imges/cat1.jpg");
   background-repeat: no-repeat ;
 }
 #page2 {
-  height: 720px;
+  height: 1000px;
   background-position: center;
   background-size: 100% auto;
   background-image: url("imges/cat2.jpg");
