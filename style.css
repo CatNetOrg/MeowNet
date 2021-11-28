@@ -1,92 +1,86 @@
 body {
-  display: block;
-  margin: 0px;
+    display: block;
+    margin: 0px;
 }
+
 ul {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .SwetchButton {
-  margin: 50%;
-  width: 12px;
-  height: 12px;
-  border-radius: 20px;
-  border: 5px solid #ece1e1;
-  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    margin: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    border: 5px solid #ece1e1;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 
 }
 
 .SwetchButton:hover {
-  box-shadow: 0 0 40px 40px #ece1e1 inset;
+    box-shadow: 0 0 40px 40px #ece1e1 inset;
 }
 
-#mainPage {
-  height: 1200px;
-  background-position: center;
-  background-size: 100% auto;
-  background-image: url("imges/mainScreenPicture.jpg");
-  background-repeat: no-repeat ;
-}
 
 #navigationPane {
-  position: fixed;
-  margin: 20%;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-60%);
 }
 
 ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.backgroundImagesSize {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 #page1 {
-  height: 1000px;
-  background-position: center;
-  background-size: 100% auto;
-  background-image: url("imges/cat1.jpg");
-  background-repeat: no-repeat ;
+    background-image: url("imges/catPicture1.jpg");
 }
+
 #page2 {
-  height: 1000px;
-  background-position: center;
-  background-size: 100% auto;
-  background-image: url("imges/cat2.jpg");
-  background-repeat: no-repeat ;
+    background-image: url("imges/catPicture2.jpg");
 }
+
 #page3 {
-  height: 720px;
-  background-position: center;
-  background-size: 100% auto;
-  background-image: url("imges/cat3.jpg");
-  background-repeat: no-repeat ;
+    background-image: url("imges/catPicture3.jpg.jpg");
 }
+
 #page4 {
-  height: 720px;
-  background-position: center;
-  background-size: 100% auto;
-  background-image: url("imges/cat4.jpg");
-  background-repeat: no-repeat ;
+    background-image: url("imges/catPicture4.jpg");
 }
+
 #page5 {
-  height: 720px;
-  background-position: center;
-  background-size: 100% auto;
-  background-image: url("imges/cat5.jpg");
-  background-repeat: no-repeat ;
+    background-image: url("imges/catPicture5.jpg");
+}
+
+#page6 {
+    background-image: url("imges/catPicture6.jpg");
 }
 
 .hiddenNavigateValue {
-  visibility: hidden;
+    visibility: hidden;
 }
