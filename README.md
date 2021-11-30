@@ -1,6 +1,6 @@
 # MeowNet
 
-### The social network for cat owners.
+### The social network for cat owners .
 
 
 

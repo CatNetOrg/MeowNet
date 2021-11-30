@@ -22,13 +22,15 @@ html {
     height: 12px;
     border-radius: 20px;
     border: 5px solid #ece1e1;
+    opacity: .3;
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 
 }
 
 .SwetchButton:hover {
-    box-shadow: 0 0 40px 40px #ece1e1 inset;
+    border: 5px solid white;
+    opacity: .7;
 }
 
 
@@ -54,7 +56,6 @@ ul {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 #page1 {
