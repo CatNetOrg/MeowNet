@@ -16,6 +16,29 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    background-color: transparent;
+    border: none;
+    top: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+}
+#inputDiv {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#regDiv {
+ margin-left: 1500px;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
 .SwetchButton {
     margin: 50%;
     width: 12px;
