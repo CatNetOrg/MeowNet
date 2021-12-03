@@ -24,14 +24,16 @@ header {
     display: flex;
     position: fixed;
     align-items: center;
+    padding: 0.5%;
 }
+
 #inputDiv {
-    margin-top: 10px;
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
 
 #regDiv {
- margin-left: 1500px;
+    justify-content: space-between;
 }
 
 #logo {
@@ -44,7 +46,7 @@ header {
     width: 12px;
     height: 12px;
     border-radius: 20px;
-    border: 5px solid #ece1e1;
+    border: 5px solid white;
     opacity: .3;
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
@@ -53,7 +55,7 @@ header {
 
 .SwetchButton:hover {
     border: 5px solid white;
-    opacity: .7;
+    opacity: .8;
 }
 
 
