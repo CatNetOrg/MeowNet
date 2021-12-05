@@ -16,19 +16,46 @@ html {
     scroll-behavior: smooth;
 }
 
-.SwetchButton {
+header {
+    background-color: transparent;
+    border: none;
+    top: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 0.5%;
+}
+
+#inputDiv {
+    display: flex;
+    align-items: center;
+}
+
+#regDiv {
+    justify-content: space-between;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+.switchButton {
     margin: 50%;
     width: 12px;
     height: 12px;
     border-radius: 20px;
-    border: 5px solid #ece1e1;
+    border: 5px solid white;
+    opacity: .3;
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 
 }
 
-.SwetchButton:hover {
-    box-shadow: 0 0 40px 40px #ece1e1 inset;
+.switchButton:hover {
+    border: 5px solid white;
+    opacity: .8;
 }
 
 
@@ -54,31 +81,30 @@ ul {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 #page1 {
-    background-image: url("imges/catPicture1.jpg");
+    background-image: url("imgas/catPicture1.jpg");
 }
 
 #page2 {
-    background-image: url("imges/catPicture2.jpg");
+    background-image: url("imgas/catPicture2.jpg");
 }
 
 #page3 {
-    background-image: url("imges/catPicture3.jpg.jpg");
+    background-image: url("imgas/catPicture3.jpg.jpg");
 }
 
 #page4 {
-    background-image: url("imges/catPicture4.jpg");
+    background-image: url("imgas/catPicture4.jpg");
 }
 
 #page5 {
-    background-image: url("imges/catPicture5.jpg");
+    background-image: url("imgas/catPicture5.jpg");
 }
 
 #page6 {
-    background-image: url("imges/catPicture6.jpg");
+    background-image: url("imgas/catPicture6.jpg");
 }
 
 .hiddenNavigateValue {
