@@ -1,14 +1,18 @@
-function buttonColorFill(liColor) {
-    let switchButton = document.getElementsByClassName('switchButton');
-    liColor.style.backgroundColor = 'white';
-    liColor.style.borderColor = 'white';
-    liColor.style.opacity = '.8';
+const switchButtons = document.querySelectorAll('.switchButton');
+switchButtons.forEach(button => {
+    button.addEventListener('click', buttonColorFill);
+});
 
-    for (let i = 0; i < switchButton.length; i++) {
-        if (switchButton[i] !== liColor) {
-            switchButton[i].style.backgroundColor = 'transparent';
-            switchButton[i].style.borderColor = 'white';
-            switchButton[i].style.opacity= '.3';
+function buttonColorFill() {
+    this.style.backgroundColor = 'white';
+    this.style.borderColor = 'white';
+    this.style.opacity = '.8';
+
+    for (let i = 0; i < switchButtons.length; i++) {
+        if (switchButtons[i] !== this) {
+            switchButtons[i].style.backgroundColor = 'transparent';
+            switchButtons[i].style.borderColor = 'white';
+            switchButtons[i].style.opacity= '.3';
         }
     }
 }
