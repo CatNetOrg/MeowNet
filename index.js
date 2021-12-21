@@ -17,3 +17,25 @@ function buttonColorFill() {
     }
 }
 
+//<!--<div>
+//             <div>
+//                 <h1>Register your favorite cat faster</h1>
+//             </div>
+//             <form>
+//                 <p>
+//                     <input type="email">
+//                 </p>
+//                 <p>
+//                     <input type="text">
+//                 </p>
+//                 <p>
+//                     <input type="password">
+//                 </p>
+//                 <p>
+//                     <input type="password">
+//                 </p>
+//                 <p>
+//                     <input type="number">
+//                 </p>
+//             </form>
+//         </div>-->

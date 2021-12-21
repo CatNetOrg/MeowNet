@@ -56,6 +56,13 @@ path {
     width: 65px;
     height: 60px;
 }
+.svgLabel {
+    width: 49px;
+    height: 43px;
+    margin-left: -27px;
+    margin-right: 36px;
+    opacity: .9;
+}
 
 #logoDiv {
     margin-right: 16px;
@@ -77,6 +84,7 @@ path {
     align-items: center;
     justify-content: space-between;
     width: 700px;
+    overflow: hidden;
 }
 
 input {
@@ -132,6 +140,7 @@ ul {
 }
 
 #page1 {
+    display: flex;
     background-image: url("images/catPicture1.jpg");
 }
 
@@ -181,4 +190,38 @@ ul {
     padding: 15px 15px;
     font-family: sans-serif;
     color: black;
+}
+
+form {
+    display: grid;
+}
+
+h1 {
+    font-size: 70px;
+}
+#registrationPanel {
+    display: flex;
+    margin: auto;
+}
+
+p {
+    font-size: 18px;
+    margin-top: auto;
+}
+button {
+    display: flex;
+    font-size: larger;
+    margin-left: 55px;
+    width: 300px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.svgButton {
+    width: 40px;
+    height: 43px;
+    margin-left: -20px;
+    margin-right: 30px;
+    opacity: .9;
 }
