@@ -24,25 +24,73 @@ header {
     display: flex;
     position: fixed;
     align-items: center;
-    padding: 0.5%;
+    justify-content: space-between;
 }
 
 #inputDiv {
     display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
     align-items: center;
 }
 
+svg {
+    width: 30px;
+    height: 43px;
+    margin-left: 12px;
+    margin-right: 2px;
+    opacity: .4;
+}
+
+path {
+
+}
+
 #regDiv {
-    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
 }
 
 #logo {
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 60px;
+}
+
+#logoDiv {
+    margin-right: 16px;
+}
+
+.paneInput {
+    border: none;
+    width: 100%;
+    background-color: white;
+    opacity: .6;
+}
+
+.borderRadius {
+    border-radius: 5px;
+}
+
+.position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+}
+
+input {
+    font-size: 1.3rem;
+    border: 0px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 5px;
+    width: 100%;
+    outline: none;
 }
 
 .switchButton {
-    margin: 50%;
+    margin: 20px;
     width: 12px;
     height: 12px;
     border-radius: 20px;
@@ -84,29 +132,53 @@ ul {
 }
 
 #page1 {
-    background-image: url("imgas/catPicture1.jpg");
+    background-image: url("images/catPicture1.jpg");
 }
 
 #page2 {
-    background-image: url("imgas/catPicture2.jpg");
+    background-image: url("images/catPicture2.jpg");
 }
 
 #page3 {
-    background-image: url("imgas/catPicture3.jpg.jpg");
+    background-image: url("images/catPicture3.jpg.jpg");
 }
 
 #page4 {
-    background-image: url("imgas/catPicture4.jpg");
+    background-image: url("images/catPicture4.jpg");
 }
 
 #page5 {
-    background-image: url("imgas/catPicture5.jpg");
+    background-image: url("images/catPicture5.jpg");
 }
 
 #page6 {
-    background-image: url("imgas/catPicture6.jpg");
+    background-image: url("images/catPicture6.jpg");
 }
 
 .hiddenNavigateValue {
     visibility: hidden;
+}
+
+.buttonSize {
+    margin-right: 15px;
+    line-height: 2.5;
+    border-radius: 5px;
+    padding: 1px 20px;
+}
+
+#buttonLogIn {
+    background-color: darkorange;
+    border-radius: 5px;
+}
+#buttonLogUp {
+    background-color: yellowgreen;
+}
+
+.aPutting {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px 15px;
+    font-family: sans-serif;
+    color: black;
 }
