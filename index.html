@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>MeowNet</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/CatNetLabel.png" />
+    <link rel="icon" type="image/png" href="images/CatNetLabel.png"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
 </head>
 <body>
@@ -15,7 +15,13 @@
         </div>
         <div class="paneInput borderRadius position">
             <svg viewBox="0 0 14 14">
-                <path d="M1.676 5.7c0-2.2 1.873-4 4.042-4 2.268 0 4.043 1.8 4.043 4s-1.775 4-4.043 4c-2.169 0-4.042-1.8-4.042-4zm11.732 6.4L10.352 9c.69-.9 1.085-2.1 1.085-3.3 0-3.1-2.564-5.7-5.719-5.7C2.563 0 0 2.6 0 5.7s2.563 5.7 5.718 5.7c1.085 0 2.17-.4 3.057-.9l3.253 3.2c.197.2.493.3.789.3.296 0 .591-.1.789-.3.197-.2.394-.5.394-.8 0-.3-.296-.5-.592-.8z"></path>
+                <path d="M1.676 5.7c0-2.2 1.873-4 4.042-4 2.268
+                0 4.043 1.8 4.043 4s-1.775 4-4.043 4c-2.169
+                0-4.042-1.8-4.042-4zm11.732 6.4L10.352 9c.69-.9
+                1.085-2.1 1.085-3.3 0-3.1-2.564-5.7-5.719-5.7C2.563
+                0 0 2.6 0 5.7s2.563 5.7 5.718 5.7c1.085 0 2.17-.4
+                3.057-.9l3.253 3.2c.197.2.493.3.789.3.296 0 .591-.1.789-
+                .3.197-.2.394-.5.394-.8 0-.3-.296-.5-.592-.8z"></path>
             </svg>
             <input id="inputId" type="text" placeholder="Search MeowNet">
         </div>
@@ -24,7 +30,7 @@
         <div class="buttonSize" id="buttonLogIn">
             <a class="aPutting" href="">Log in</a>
         </div>
-        <div class="buttonSize" id ="buttonLogUp">
+        <div class="buttonSize" id="buttonLogUp">
             <a class="aPutting" href="">Sign up</a>
         </div>
 
@@ -68,8 +74,65 @@
 
     <div id="page1" class="backgroundImagesSize">
         <span class="hiddenNavigateValue">page1</span>
+        <div id="createSubmitPanel">
+            <div id="playseImport">
+            <span>Name</span>
+             <input class="inputRegistraition">
+            <br>
+            <span>SerName</span>
+            <input class="inputRegistraition">
+            <br>
+            <span>SerPass</span>
+            <input class="inputRegistraition" type="password">
+            <br>
+            <span>SerPass</span>
+            <input class="inputRegistraition" type="password">
+                <button>Submit</button>
+        </div>
+        </div>
+        <div id="registrationPanel">
+            <div>
+                <h1>Register
+                    <br>
+                    your
+                    <br>
+                    cat
+                    <br>
+                    faster ^^</h1>
+            </div>
+            <form>
+                <button id="createProfileBtn">
+                    <img class="svgLabel" src="images/CatNetLabel.png" alt="err">
+                    <p>Сreate your profile</p>
+                </button>
+                <br>
+                <button>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="svgButton">
+                        <g>
+                            <path fill="#EA4335"
+                                  d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                            <path fill="#4285F4"
+                                  d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                            <path fill="#FBBC05"
+                                  d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z">
+                            </path>
+                            <path fill="#34A853"
+                                  d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                            <path fill="none" d="M0 0h48v48H0z"></path>
+                        </g>
+                    </svg>
+                    <p>Sign up with Google</p></button>
+                <br>
+                <button>
+                <p>
+                </p>
+                    <p>Sign up with Facebook</p>
+                </button>
+                <br>
+                <button><p>Sign up with Apple</p></button>
+            </form>
+        </div>
     </div>
-
     <div id="page2" class="backgroundImagesSize">
         <span class="hiddenNavigateValue">page2</span>
     </div>
