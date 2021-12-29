@@ -64,6 +64,36 @@ path {
     opacity: .9;
 }
 
+#createSubmitPanel {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 34%;
+    top: -500px;
+    border-radius: 15px;
+    width: 640px;
+    height: 400px;
+    background-image: url("images/art-lucity-kot-koshka-kote.jpeg");
+
+}
+
+span {
+    color: orange;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.inputRegistraition {
+    background-color: bisque;;
+    width: 50%;
+    margin: 15px;
+}
+
+#playseImport {
+    margin: 30px;
+}
+
 #logoDiv {
     margin-right: 16px;
 }
@@ -209,6 +239,7 @@ p {
     margin-top: auto;
 }
 button {
+    border-radius: 15px;
     display: flex;
     font-size: larger;
     margin-left: 55px;
