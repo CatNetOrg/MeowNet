@@ -3,12 +3,27 @@ switchButtons.forEach(button => {
     button.addEventListener('click', buttonColorFill);
 });
 
-const buttonSubmit = document.querySelector('#createProfileBtn');
+const submitPanel = document.getElementById("createSubmitPanel");
+
+const logInPanel = document.getElementById("createLogInPanel")
+
+const buttonSubmit = document.querySelector('#buttonSignUp');
 buttonSubmit.addEventListener('click', createSubmitPanel);
+
+const buttonLogIn = document.querySelector('#buttonLogIn');
+buttonLogIn.addEventListener('click', createLogInPanel);
+
+const submitData = document.querySelector('#buttonSubmit');
+submitData.addEventListener('click', saveUserData);
+
+const closeSubmitPane = document.querySelector('#exitSignUpForm');
+closeSubmitPane.addEventListener('click', closePane);
+
+const closeLogInForm = document.querySelector('#exitLogInForm');
+closeLogInForm.addEventListener('click', clouseSubmitPanel);
 
 function createSubmitPanel(event) {
     event.preventDefault();
-    let createSubmitPanel = document.getElementById("createSubmitPanel");
     let svgButton = document.getElementsByClassName("svgButton");
     for (let i = 0; i < svgButton.length; i++) {
         svgButton[i].style.visibility = "hidden";
@@ -17,8 +32,18 @@ function createSubmitPanel(event) {
     for (let i = 0; i < svgButton.length; i++) {
         svgLabel[i].style.visibility = "hidden";
     }
-    createSubmitPanel.style.top = "319px"
-    createSubmitPanel.style.left = "690px"
+    submitPanel.style.top = "50%";
+    submitPanel.style.left = "50%";
+    submitPanel.style.transform = 'translate(-50%, -50%)';
+
+}
+
+function createLogInPanel(event) {
+    event.preventDefault();
+    logInPanel.style.top = "50%";
+    logInPanel.style.left = "50%";
+    logInPanel.style.transform = 'translate(-50%, -50%)';
+
 }
 
 function buttonColorFill() {
@@ -35,27 +60,26 @@ function buttonColorFill() {
     }
 }
 
+function closePane() {
+    submitPanel.style.top = "-500px"
+}
 
+function clouseSubmitPanel() {
+    logInPanel.style.top = "-500px"
+}
 
-//<!--<div>
-//             <div>
-//                 <h1>Register your favorite cat faster</h1>
-//             </div>
-//             <form>
-//                 <p>
-//                     <input type="email">
-//                 </p>
-//                 <p>
-//                     <input type="text">
-//                 </p>
-//                 <p>
-//                     <input type="password">
-//                 </p>
-//                 <p>
-//                     <input type="password">
-//                 </p>
-//                 <p>
-//                     <input type="number">
-//                 </p>
-//             </form>
-//         </div>-->
+function saveUserData() {
+    const personData = document.getElementsByClassName('inputRegistraition');
+    const userData = {
+        name: personData[0].value,
+        surname: personData[1].value,
+        age: personData[2].value,
+        pass: personData[3].value
+    }
+
+    localStorage.setItem("userdata", JSON.stringify(userData));
+
+    const user = localStorage.getItem('userdata');
+    console.log(user);
+
+}

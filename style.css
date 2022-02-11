@@ -27,6 +27,17 @@ header {
     justify-content: space-between;
 }
 
+.exitButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+
 #inputDiv {
     display: flex;
     margin-top: 10px;
@@ -74,9 +85,24 @@ path {
     border-radius: 15px;
     width: 640px;
     height: 400px;
-    background-image: url("images/art-lucity-kot-koshka-kote.jpeg");
+    background-image: url("images/koshka-kotenok-belyi-malysh-lezhit-boke-svet.jpeg");
 
 }
+
+#createLogInPanel {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 34%;
+    top: -1000px;
+    border-radius: 15px;
+    width: 640px;
+    height: 400px;
+    background-image: url("images/koshka-kotenok-belyi-malysh-lezhit-boke-svet.jpeg");
+}
+
+
 
 span {
     color: orange;
@@ -85,13 +111,22 @@ span {
     font-size: 30px;
 }
 .inputRegistraition {
-    background-color: bisque;;
-    width: 50%;
+    background-color: bisque;
+    min-width: 285px;
+    width: 280px;
     margin: 15px;
 }
 
 #playseImport {
     margin: 30px;
+}
+
+#placeImportSecond {
+    margin: 30px;
+}
+
+#loginButton {
+    margin: 0 auto;
 }
 
 #logoDiv {
@@ -209,7 +244,7 @@ ul {
     background-color: darkorange;
     border-radius: 5px;
 }
-#buttonLogUp {
+#buttonSignUp {
     background-color: yellowgreen;
 }
 
@@ -222,8 +257,13 @@ ul {
     color: black;
 }
 
-form {
+.formPosition {
+    position: absolute;
     display: grid;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 h1 {
@@ -243,10 +283,32 @@ button {
     display: flex;
     font-size: larger;
     margin-left: 55px;
-    width: 300px;
+    width: 200px;
     height: 60px;
     justify-content: center;
     align-items: center;
+}
+
+#buttonSubmit {
+    margin: 0 auto;
+}
+
+.contentFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#exiSt {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    color: red;
 }
 
 .svgButton {
