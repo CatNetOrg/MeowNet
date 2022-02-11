@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>MeowNet</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/CatNetLabel.png" />
+    <link rel="icon" type="image/png" href="images/CatNetLabel.png"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
 </head>
 <body>
@@ -15,7 +15,13 @@
         </div>
         <div class="paneInput borderRadius position">
             <svg viewBox="0 0 14 14">
-                <path d="M1.676 5.7c0-2.2 1.873-4 4.042-4 2.268 0 4.043 1.8 4.043 4s-1.775 4-4.043 4c-2.169 0-4.042-1.8-4.042-4zm11.732 6.4L10.352 9c.69-.9 1.085-2.1 1.085-3.3 0-3.1-2.564-5.7-5.719-5.7C2.563 0 0 2.6 0 5.7s2.563 5.7 5.718 5.7c1.085 0 2.17-.4 3.057-.9l3.253 3.2c.197.2.493.3.789.3.296 0 .591-.1.789-.3.197-.2.394-.5.394-.8 0-.3-.296-.5-.592-.8z"></path>
+                <path d="M1.676 5.7c0-2.2 1.873-4 4.042-4 2.268
+                0 4.043 1.8 4.043 4s-1.775 4-4.043 4c-2.169
+                0-4.042-1.8-4.042-4zm11.732 6.4L10.352 9c.69-.9
+                1.085-2.1 1.085-3.3 0-3.1-2.564-5.7-5.719-5.7C2.563
+                0 0 2.6 0 5.7s2.563 5.7 5.718 5.7c1.085 0 2.17-.4
+                3.057-.9l3.253 3.2c.197.2.493.3.789.3.296 0 .591-.1.789-
+                .3.197-.2.394-.5.394-.8 0-.3-.296-.5-.592-.8z"></path>
             </svg>
             <input id="inputId" type="text" placeholder="Search MeowNet">
         </div>
@@ -24,7 +30,7 @@
         <div class="buttonSize" id="buttonLogIn">
             <a class="aPutting" href="">Log in</a>
         </div>
-        <div class="buttonSize" id ="buttonLogUp">
+        <div class="buttonSize" id="buttonSignUp">
             <a class="aPutting" href="">Sign up</a>
         </div>
 
@@ -68,8 +74,48 @@
 
     <div id="page1" class="backgroundImagesSize">
         <span class="hiddenNavigateValue">page1</span>
+        <div id="createSubmitPanel">
+            <div id="playseImport">
+                <button id="exitSignUpForm" class="exitButton" onclick="closePane()">X</button>
+                <form class="formPosition">
+                    <div class="contentFlex">
+                        <span>Name</span>
+                        <input class="inputRegistraition" required placeholder="Enter your name" pattern="[a-z A-Z]{1,20}">
+                    </div>
+                    <div class="contentFlex">
+                        <span>Surname</span>
+                        <input class="inputRegistraition" required placeholder="Enter your surname" pattern="[a-z A-Z]{1,20}">
+                    </div>
+                    <div class="contentFlex">
+                        <span>Date of birth</span>
+                        <input class="inputRegistraition" type="date" required placeholder="Enter your day of birth" pattern="[1-9]{1,15}">
+                    </div>
+                    <div class="contentFlex">
+                        <span>Password</span>
+                        <input class="inputRegistraition" type="password" required placeholder="Enter your pass" pattern="[a-z A-Z 1-9]{1,15}">
+                    </div>
+                    <button type="submit" id="buttonSubmit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="createLogInPanel">
+            <div id= "placeImportSecond">
+                <button id="exitLogInForm" class="exitButton" onclick="closePane()">X</button>
+            <form class="formPosition">
+                <div class="contentFlex">
+                    <span>Name</span>
+                    <input class="inputRegistraition" required placeholder="Enter your name" pattern="[a-z A-Z]{1,20}">
+                </div>
+                <div class="contentFlex">
+                    <span>Password</span>
+                    <input class="inputRegistraition" type="password" required placeholder="Enter your pass" pattern="[a-z A-Z 1-9]{1,15}">
+                </div>
+                <button type="submit" id="loginButton">Log in</button>
+            </form>
+            </div>
+        </div>
     </div>
-
+    </div>
     <div id="page2" class="backgroundImagesSize">
         <span class="hiddenNavigateValue">page2</span>
     </div>
@@ -89,7 +135,7 @@
     <div id="page6" class="backgroundImagesSize">
         <span class="hiddenNavigateValue">page6</span>
     </div>
-
+    
 </main>
 <footer></footer>
 <script type="text/javascript" src="index.js"></script>
